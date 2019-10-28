@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p>The First Mad Lib</p>
+
+	<button onclick="myFunction()">Click me</button>
+
+	<p id="demo"></p>
+
+	<script>
+	var str="";
+	// this function will be called when click me button is clicked 
+	// and will allow the user to enter string 5 times.
+	function myFunction() {
+		
+	  var i;
+	  for (i=0; i<5;i++)
+	  {
+		word = prompt("Please enter a word");
+		document.write(word + " ");
+		str += word;		
+		str+= " ";
+	  }
+	  
+	  document.write(str);
+	}
+	
+	</script>
+
+</body>
+</html>
